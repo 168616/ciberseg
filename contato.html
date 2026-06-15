@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  modo-light-dark="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+     <script src="./js/script.js"></script>
     <header>
         <h1>Contato</h1>
     </header>
-    <nav>
+    <nav id="navbar">
         <a href="./index.html">Home</a>
+            <div>
+                <button onclick="increaseFont()"> Aumentar fonte</button>
+                <button onclick="decreaseFont()">Diminuir fonte</button>
+
+                <select id="selectModo">
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
+                <option value="Sistema">Sistema</option>
+            </select>
+        </div>
     </nav>
+    <br><br>
     <main>
-        <section>
-            <h3>Entre em contato</h3>
-            
-            formulário de contatoS
+        <section id="contato">
+            <h3>Entre em contato pelo formulario</h3>
+        
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea><br>
+                <button id="alerta">Enviar</button>
+            </form>
 
         </section>
     </main>
+        <footer>
+        <p>Desenvolvido por Micaella</p>
+        <p>2026</p>
+    </footer>
 </body>
 </html>

@@ -1,26 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  modo-light-dark="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>segurança</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+     <script src="./js/script.js"></script>
     <header>
         <h1>segurança</h1>
     </header>
-    <nav>
+    <nav id="navbar">
         <a href="./index.html">Home</a>
+             <div>
+                <button onclick="increaseFont()"> Aumentar fonte</button>
+                <button onclick="decreaseFont()">Diminuir fonte</button>
+
+                <select id="selectModo">
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
+                <option value="Sistema">Sistema</option>
+            </select>
+        </div>
     </nav>
     <main>
-        <section>
+        <script src="./js/script.js"></script>
+        <section id="titulo">
             <h3>Segurança</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Seguindo o tema de cybersegurança um gerador de senhas seguras foi desenvolvido. Selecione os caracteres desejados e tamanho da senha e clique em 'Gerar senha'.</p>
         </section>
-        <section>
+        <section id="geradorSenha">
             <h3>Gerador de senha</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </section>
+            <input type="text" id="inputPasswordId">
+
+<div>
+    <input id="inputLenghtId" type="range" min="6" max="24">
+    <label for="inputLenghtId"></label>
+</div>
+<div>
+    <input id="LowerId" type="checkbox">
+    <label for="LowerId">Incluir letras minúsculas</label>
+</div>
+<div>
+    <input id="UpperId" type="checkbox">
+    <label for="UpperId">Incluir letras maiúsculas</label>
+</div>
+<div>
+    <input id="NumberId" type="checkbox">
+    <label for="NumberId">Incluir números</label>
+</div>
+<div>
+    <input id="SymbolId" type="checkbox">
+    <label for="SymbolId">Incluir símbolos</label>
+</div>
+
+<button id="gerarSenha">Gerar senha</button>
+
+         </section>
     </main>
+        <footer>
+        <p>Desenvolvido por Micaella</p>
+        <p>2026</p>
+    </footer>
 </body>
 </html>

@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  modo-light-dark="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contenct</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+     <script src="./js/script.js"></script>
     <header>
         <h1>Content</h1>
     </header>
-    <nav>
+    <nav id="navbar">
         <a href="./index.html">Home</a>
+                <div>
+                <button onclick="increaseFont()"> Aumentar fonte</button>
+                <button onclick="decreaseFont()">Diminuir fonte</button>
+
+                <select id="selectModo">
+                <option value="light">Claro</option>
+                <option value="dark">Escuro</option>
+                <option value="Sistema">Sistema</option>
+            </select>
+        </div>
     </nav>
     <main>
         <section>
             <h3>Cartilha</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
+            <footer>
+        <p>Desenvolvido por Micaella</p>
+        <p>2026</p>
+    </footer>
 </body>
 </html>
